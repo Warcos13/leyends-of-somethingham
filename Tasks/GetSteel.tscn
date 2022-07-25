@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Tasks/BaseTask.tscn" type="PackedScene" id=1]
+
+[node name="GetSteel" instance=ExtResource( 1 )]
+text = "Get Steel"
+task_type = "get_steel"
+base_reward = 1
+reward_resource = "steel"

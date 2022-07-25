@@ -9,19 +9,36 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "",
+"base": "Reference",
+"class": "DbSim",
+"language": "GDScript",
+"path": "res://Scripts/Db_sim.gd"
+}, {
+"base": "EditorVCSInterface",
 "class": "GitAPI",
 "language": "NativeScript",
 "path": "res://addons/godot-git-plugin/git_api.gdns"
+}, {
+"base": "Timer",
+"class": "Task",
+"language": "GDScript",
+"path": "res://Scripts/Task/Task.gd"
 } ]
 _global_script_class_icons={
-"GitAPI": ""
+"DbSim": "",
+"GitAPI": "",
+"Task": ""
 }
 
 [application]
 
 config/name="leyends-of-somethingham"
+run/main_scene="res://TESTS/PlayGround.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Data="*res://Scripts/Singletons/Data.gd"
 
 [gdnative]
 
